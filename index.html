@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yumbite </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="recipe-header">
+        <div class="header-container">
+            <nav class="nav-links right-nav">
+                <a href="#home">Home</a>
+                <a href="dishes.html">Your Dishes</a>
+            </nav>
+
+            <div class="logo">
+                <img src="logo.jpeg" alt="Yumbite Logo">
+                <h1>Yum<span>bite</span></h1>
+            </div>
+
+            <nav class="nav-links left-nav">
+                <a href="#type">Categories</a>
+                <a href="#about">About Us</a>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="dishes.html" class="btn add-btn">
+                    <i class="fa-solid fa-plus"></i> Add Recipe
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            
+            <!-- Professional Content on the Left -->
+            <div class="hero-content">
+                <div class="badge-wrapper" id="home">
+                    <span class="hero-badge"><i class="fa-solid fa-fire"></i> Welcome to Yumbite</span>
+                </div>
+                <h1>Escape The Ordinary,<br> Indulge In Flavors</h1>
+                <p>Explore exquisite homemade recipes, craft your signature dishes effortlessly, and share your culinary passion with food enthusiasts worldwide.</p>
+                
+                <div class="hero-buttons">
+                    <button class="btn primary-btn"><i class="fa-solid fa-utensils"></i><a href="#type"> Explore Dishes</a></button>
+                    
+                </div>
+            </div>
+
+            <!-- Professional Visual/Video Frame on the Right -->
+           <div class="hero-image-box"> 
+            <div class="video-frame-glow"></div>
+            <video autoplay muted loop playsinline class="hero-vid">
+                <source src="istockphoto-2175222562-640_adpp_is.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </div>
+    </section>
+
+    
+    <!-- Countries Section -->
+<section class="featured-countries">
+    <div class="header-row">
+        <h2>Featured Countries</h2>
+    </div>
+    
+    <div class="countries-slider">
+        <!-- Italy -->
+        <div class="country-card">
+            <a href="Italy.html">
+                <img src="img1.jpg" alt="Italy">
+            </a>
+            <h3>Italy</h3>
+            <p>Italian</p>
+        </div>
+        <!-- Korea -->
+        <div class="country-card">
+            <a href="korea.html">
+                <img src="img2.jpg" alt="Korea">
+            </a>
+            <h3>Korea</h3>
+            <p>Korean</p>
+        </div>
+        <!-- Mexico -->
+        <div class="country-card">
+            <a href="mexico.html">
+                <img src="img3.jpg" alt="Mexico">
+            </a>
+            <h3>Mexico</h3>
+            <p>Mexican</p>
+        </div>
+        <!-- Egpyt -->
+        <div class="country-card">
+            <a href="Egypt.html">
+                <img src="img.jpg" alt="Egypt">
+            </a>
+            <h3>Egypt</h3>
+            <p>Egyption</p>
+        </div>
+    </div>
+</section>
+<tr>
+
+ <!-- Category Filter Buttons -->
+<div class="category-filters" id="type">
+    <button class="category-btn active" data-filter="all">All</button>
+    <button class="category-btn" data-filter="breakfast">Breakfast</button>
+    <button class="category-btn" data-filter="lunch">Lunch</button>
+    <button class="category-btn" data-filter="desserts">Desserts</button>
+    <button class="category-btn" data-filter="healthy">Healthy</button>
+</div>
+
+
+<!-- Categories & Recipes Section -->
+<section class="categories-section">
+    <div class="recipes-grid">
+        
+        <!-- Dish 1: Dessert (Pink Cake) -->
+        <div class="dish-card" data-category="desserts">
+            <a href="#dish-cake">
+                <img src="moroznaya_photo-cake-7948556_1920.jpg" alt="Pink Cake">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-cake" class="dish-title-link">Pink Macaron Cake</a></h3>
+                <p>Sweet & creamy delight</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 45 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 2: Breakfast (Muesli) -->
+        <div class="dish-card" data-category="breakfast">
+            <a href="#dish-muesli">
+                <img src="fotomaus13-muesli-486832_1920.jpg" alt="Muesli">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-muesli" class="dish-title-link">Healthy Morning Muesli</a></h3>
+                <p>Packed with oats, fruits & nuts</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 10 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 3: Lunch (Kebab) -->
+        <div class="dish-card" data-category="lunch">
+            <a href="#dish-kebab">
+                <img src="2sif-kebab-platter-7287366_1920.jpg" alt="Kebab">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-kebab" class="dish-title-link">Traditional Kebab Platter</a></h3>
+                <p>Juicy grilled meats & savory spices</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 50 mins</span>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 4: Lunch (Fries) -->
+        <div class="dish-card" data-category="lunch">
+            <a href="#dish-fries">
+                <img src="pexels-bowl-1842294_1920.jpg" alt="French Fries">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-fries" class="dish-title-link">Golden French Fries</a></h3>
+                <p>Crispy & lightly salted</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 15 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 5: Healthy (Salad Bowl) -->
+        <div class="dish-card" data-category="healthy">
+            <a href="#dish-salad">
+                <img src="fotomaus13-muesli-486832_1920.jpg" alt="Salad">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-salad" class="dish-title-link">Fresh Garden Salad</a></h3>
+                <p>Healthy & refreshing greens</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 10 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 6: Dessert (Cheesecake) -->
+        <div class="dish-card" data-category="desserts">
+            <a href="#dish-cheesecake">
+                <img src="food1.jpg" alt="Berry Cheesecake">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-cheesecake" class="dish-title-link">Berry Cheesecake</a></h3>
+                <p>Topped with sweet berries</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 35 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 7: Breakfast (Pancakes) -->
+        <div class="dish-card" data-category="breakfast">
+            <a href="#dish-pancakes">
+                <img src="piviso-pancakes-2291908_1920.jpg" alt="Pancakes">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-pancakes" class="dish-title-link">Fluffy Pancakes</a></h3>
+                <p>Served with maple syrup & berries</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 20 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 8: Breakfast (Bread) -->
+        <div class="dish-card" data-category="breakfast">
+            <a href="#dish-bread">
+                <img src="christinazetterberg-bread-8535650_1920.jpg" alt="Bread">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-bread" class="dish-title-link">Rustic Artisan Bread</a></h3>
+                <p>Freshly baked & golden brown</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 60 mins</span>
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 9: Lunch (Grilled Chicken) -->
+        <div class="dish-card" data-category="lunch">
+            <a href="#dish-chicken">
+                <img src="ritae-spaghetti-1392266_1920.jpg" alt="Grilled Chicken">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-chicken" class="dish-title-link">Herb Grilled Chicken</a></h3>
+                <p>Served with roasted veggies</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 40 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 10: Healthy (Quinoa Bowl) -->
+        <div class="dish-card" data-category="healthy">
+            <a href="#dish-quinoa">
+                <img src="food.jpg" alt="Quinoa Bowl">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-quinoa" class="dish-title-link">Green Quinoa Bowl</a></h3>
+                <p>Packed with superfoods</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 15 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 11: Desserts (Brownie) -->
+        <div class="dish-card" data-category="desserts">
+            <a href="#dish-brownie">
+                <img src="food4.jpg" alt="Brownie">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-brownie" class="dish-title-link">Fudgy Chocolate Brownie</a></h3>
+                <p>Melt-in-your-mouth goodness</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 30 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dish 12: Breakfast (Avocado Toast) -->
+        <div class="dish-card" data-category="breakfast">
+            <a href="#dish-avocado-toast">
+                <img src="food2.jpg" alt="Avocado Toast">
+            </a>
+            <div class="dish-info">
+                <h3><a href="#dish-avocado-toast" class="dish-title-link">Poached Egg Avocado Toast</a></h3>
+                <p>Fresh herbs & olive oil</p>
+                <div class="recipe-meta">
+                    <span class="timer"><i class="fa-regular fa-clock"></i> 15 mins</span>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+        <!-- ============ DISH 1: PINK MACARON CAKE ============ -->
+<section id="dish-cake" class="detail" style="--hero-color:#E91E63">
+  <div class="splash"><img src="moroznaya_photo-cake-7948556_1920.jpg" alt="Pink Cake"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Sweet Dessert</span><h2>Pink Macaron Cake</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="moroznaya_photo-cake-7948556_1920.jpg" alt="Pink Cake">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Sweet Dessert</span>
+        <h2>Pink Macaron Cake</h2>
+        <p>Sweet & creamy delight</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 45 min</span><span>📊 Medium</span><span>👤 8 servings</span></div>
+    <p class="detail-desc">A magnificent showstopper dessert featuring delicate layers of moist sponge cake, rich strawberry buttercream, and decorated with crisp French macarons on top.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Bake layers</h4><p>Prepare vanilla sponge batter, divide into pans, and bake until springy.</p></div></li>
+      <li><span class="num">2</span><div><h4>Make buttercream</h4><p>Whip butter, powdered sugar, and strawberry extract until fluffy.</p></div></li>
+      <li><span class="num">3</span><div><h4>Stack</h4><p>Layer sponge cakes with buttercream and strawberry slices.</p></div></li>
+      <li><span class="num">4</span><div><h4>Frost</h4><p>Cover the entire cake smoothly with pink frosting.</p></div></li>
+      <li><span class="num">5</span><div><h4>Decorate</h4><p>Arrange gourmet pink macarons neatly on top.</p></div></li>
+      <li><span class="num">6</span><div><h4>Chill</h4><p>Refrigerate for 30 minutes before serving.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>7 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Flour</strong><span class="amt">300g</span><span class="note">Cake flour</span></div>
+      <div class="ing-card"><span class="emoji">🧈</span><strong>Butter</strong><span class="amt">200g</span><span class="note">Softened</span></div>
+      <div class="ing-card"><span class="emoji">🥚</span><strong>Eggs</strong><span class="amt">4 large</span><span class="note">Room temp</span></div>
+      <div class="ing-card"><span class="emoji">🍓</span><strong>Strawberry puree</strong><span class="amt">100ml</span><span class="note">Flavoring</span></div>
+      <div class="ing-card"><span class="emoji">🍬</span><strong>Powdered sugar</strong><span class="amt">400g</span><span class="note">Frosting</span></div>
+      <div class="ing-card"><span class="emoji">🍪</span><strong>Macarons</strong><span class="amt">6 pieces</span><span class="note">Decoration</span></div>
+      <div class="ing-card"><span class="emoji">🥛</span><strong>Milk</strong><span class="amt">120ml</span><span class="note">Whole milk</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Sweet</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Creamy</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Fruity</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+      <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Ensure ingredients are at room temperature for smooth batter.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 8</strong><p>Ideal for celebrations and birthdays.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 2: HEALTHY MORNING MUESLI ============ -->
+<section id="dish-muesli" class="detail" style="--hero-color:#4CAF50">
+  <div class="splash"><img src="fotomaus13-muesli-486832_1920.jpg" alt="Muesli"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Breakfast Bowl</span><h2>Healthy Morning Muesli</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="fotomaus13-muesli-486832_1920.jpg" alt="Muesli">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Breakfast Bowl</span>
+        <h2>Healthy Morning Muesli</h2>
+        <p>Packed with oats, fruits & nuts</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 10 min</span><span>📊 Easy</span><span>👤 1 serving</span></div>
+    <p class="detail-desc">A nutritious, energy-boosting breakfast bowl combining raw rolled oats, crunchy nuts, seeds, and fresh seasonal fruits soaked in yogurt or milk.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Base</h4><p>Add raw rolled oats into a clean breakfast bowl.</p></div></li>
+      <li><span class="num">2</span><div><h4>Nuts & seeds</h4><p>Mix in chia seeds, chopped almonds, and walnuts.</p></div></li>
+      <li><span class="num">3</span><div><h4>Liquid</h4><p>Pour cold milk or Greek yogurt over the mixture.</p></div></li>
+      <li><span class="num">4</span><div><h4>Fruit</h4><p>Arrange sliced bananas and fresh berries on top.</p></div></li>
+      <li><span class="num">5</span><div><h4>Sweetener</h4><p>Drizzle raw organic honey over the fruits.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Mix together and enjoy immediately.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Rolled oats</strong><span class="amt">½ cup</span><span class="note">Raw base</span></div>
+      <div class="ing-card"><span class="emoji">🥛</span><strong>Greek yogurt</strong><span class="amt">150g</span><span class="note">Creamy base</span></div>
+      <div class="ing-card"><span class="emoji">🍌</span><strong>Banana</strong><span class="amt">1 medium</span><span class="note">Sliced</span></div>
+      <div class="ing-card"><span class="emoji">🫐</span><strong>Berries</strong><span class="amt">⅓ cup</span><span class="note">Fresh berries</span></div>
+      <div class="ing-card"><span class="emoji">🥜</span><strong>Almonds & Walnuts</strong><span class="amt">2 tbsp</span><span class="note">Chopped</span></div>
+      <div class="ing-card"><span class="emoji">🍯</span><strong>Honey</strong><span class="amt">1 tsp</span><span class="note">Natural sweetener</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Fresh</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Nutty</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+      <div class="flavor-bar"><span>Sweet</span><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      <div class="flavor-bar"><span>Light</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Let oats soak for 5 minutes before eating to soften texture.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 1</strong><p>A quick, nutrient-dense breakfast.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 3: TRADITIONAL KEBAB PLATTER ============ -->
+<section id="dish-kebab" class="detail" style="--hero-color:#FF5722">
+  <div class="splash"><img src="2sif-kebab-platter-7287366_1920.jpg" alt="Kebab"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Grill Special</span><h2>Traditional Kebab Platter</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="2sif-kebab-platter-7287366_1920.jpg" alt="Kebab">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Grill Special</span>
+        <h2>Traditional Kebab Platter</h2>
+        <p>Juicy grilled meats & savory spices</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 50 min</span><span>📊 Medium</span><span>👤 4 servings</span></div>
+    <p class="detail-desc">An aromatic platter of tender, perfectly seasoned grilled meats marinated in Middle Eastern spices, served with charred vegetables and flatbread.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Marinade</h4><p>Mix olive oil, garlic, lemon juice, and spices in a bowl.</p></div></li>
+      <li><span class="num">2</span><div><h4>Coat meat</h4><p>Cubed meat is coated and rested for 30 minutes.</p></div></li>
+      <li><span class="num">3</span><div><h4>Skewer</h4><p>Thread meat tightly onto skewers.</p></div></li>
+      <li><span class="num">4</span><div><h4>Grill</h4><p>Cook on a hot charcoal grill until charred and tender.</p></div></li>
+      <li><span class="num">5</span><div><h4>Veggies</h4><p>Char onion halves and tomatoes on the side.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Arrange over warm flatbread with parsley.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>8 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🥩</span><strong>Meat</strong><span class="amt">600g</span><span class="note">Cubed lamb/beef</span></div>
+      <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic</strong><span class="amt">4 cloves</span><span class="note">Minced</span></div>
+      <div class="ing-card"><span class="emoji">🍋</span><strong>Lemon juice</strong><span class="amt">3 tbsp</span><span class="note">Fresh juice</span></div>
+      <div class="ing-card"><span class="emoji">🫒</span><strong>Olive oil</strong><span class="amt">¼ cup</span><span class="note">Extra virgin</span></div>
+      <div class="ing-card"><span class="emoji">🌶️</span><strong>Spices</strong><span class="amt">2 tsp</span><span class="note">Paprika & cumin</span></div>
+      <div class="ing-card"><span class="emoji">🍅</span><strong>Tomatoes</strong><span class="amt">2 large</span><span class="note">For grilling</span></div>
+      <div class="ing-card"><span class="emoji">🧅</span><strong>Onions</strong><span class="amt">2 medium</span><span class="note">With sumac</span></div>
+      <div class="ing-card"><span class="emoji">🫓</span><strong>Flatbread</strong><span class="amt">4 pieces</span><span class="note">Warm pita</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Smoky</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Spicy</span><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Don't over-marinate with lemon juice for too long.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 4</strong><p>Best served hot with garlic sauce.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 4: GOLDEN FRENCH FRIES ============ -->
+<section id="dish-fries" class="detail" style="--hero-color:#FFC107">
+  <div class="splash"><img src="pexels-bowl-1842294_1920.jpg" alt="Fries"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Crispy Side</span><h2>Golden French Fries</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="pexels-bowl-1842294_1920.jpg" alt="Fries">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Crispy Side</span>
+        <h2>Golden French Fries</h2>
+        <p>Crispy & lightly salted</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 25 min</span><span>📊 Easy</span><span>👤 3 servings</span></div>
+    <p class="detail-desc">Crispy on the outside, fluffy on the inside. These golden potato batons are fried to absolute perfection and sprinkled with sea salt.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Cut</h4><p>Peel potatoes and cut into uniform sticks.</p></div></li>
+      <li><span class="num">2</span><div><h4>Soak</h4><p>Submerge in cold water for 20 minutes to remove starch.</p></div></li>
+      <li><span class="num">3</span><div><h4>Dry</h4><p>Pat completely dry with paper towels.</p></div></li>
+      <li><span class="num">4</span><div><h4>First fry</h4><p>Fry in medium oil until soft, then drain.</p></div></li>
+      <li><span class="num">5</span><div><h4>Second fry</h4><p>Fry in high heat until golden and crispy.</p></div></li>
+      <li><span class="num">6</span><div><h4>Season</h4><p>Toss with sea salt and serve hot.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>4 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🥔</span><strong>Potatoes</strong><span class="amt">4 large</span><span class="note">Russet potatoes</span></div>
+      <div class="ing-card"><span class="emoji">🌻</span><strong>Oil</strong><span class="amt">1L</span><span class="note">For frying</span></div>
+      <div class="ing-card"><span class="emoji">🧂</span><strong>Sea salt</strong><span class="amt">1 tsp</span><span class="note">Fine grain</span></div>
+      <div class="ing-card"><span class="emoji">🍅</span><strong>Ketchup</strong><span class="amt">¼ cup</span><span class="note">For dipping</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Crispy</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Salty</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:70%"></div></div></div>
+      <div class="flavor-bar"><span>Light</span><div class="track"><div class="fill" style="width:60%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Double frying is the secret to ultimate crunchiness.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 3</strong><p>The ultimate comfort snack.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 5: FRESH GARDEN SALAD ============ -->
+<section id="dish-salad" class="detail" style="--hero-color:#2E7D32">
+  <div class="splash"><img src="fotomaus13-muesli-486832_1920.jpg" alt="Salad"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Healthy Greens</span><h2>Fresh Garden Salad</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="fotomaus13-muesli-486832_1920.jpg" alt="Salad">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Healthy Greens</span>
+        <h2>Fresh Garden Salad</h2>
+        <p>Healthy & refreshing greens</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 10 min</span><span>📊 Easy</span><span>👤 2 servings</span></div>
+    <p class="detail-desc">A refreshing blend of crisp garden greens, juicy cherry tomatoes, cucumbers, and tangy vinaigrette dressing.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Wash</h4><p>Rinse lettuce and greens thoroughly.</p></div></li>
+      <li><span class="num">2</span><div><h4>Chop</h4><p>Slice cucumbers and halve cherry tomatoes.</p></div></li>
+      <li><span class="num">3</span><div><h4>Dress</h4><p>Whisk olive oil, lemon juice, salt, and pepper.</p></div></li>
+      <li><span class="num">4</span><div><h4>Toss</h4><p>Combine veggies in a large bowl.</p></div></li>
+      <li><span class="num">5</span><div><h4>Pour</h4><p>Drizzle vinaigrette over just before serving.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Enjoy fresh and crisp.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🥬</span><strong>Lettuce</strong><span class="amt">1 head</span><span class="note">Fresh greens</span></div>
+      <div class="ing-card"><span class="emoji">🍅</span><strong>Cherry tomatoes</strong><span class="amt">1 cup</span><span class="note">Halved</span></div>
+      <div class="ing-card"><span class="emoji">🥒</span><strong>Cucumber</strong><span class="amt">1 medium</span><span class="note">Sliced</span></div>
+      <div class="ing-card"><span class="emoji">🫒</span><strong>Olive oil</strong><span class="amt">2 tbsp</span><span class="note">Dressing</span></div>
+      <div class="ing-card"><span class="emoji">🍋</span><strong>Lemon juice</strong><span class="amt">1 tbsp</span><span class="note">Fresh</span></div>
+      <div class="ing-card"><span class="emoji">🧂</span><strong>Salt & Pepper</strong><span class="amt">To taste</span><span class="note">Seasoning</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Fresh</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Tangy</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+      <div class="flavor-bar"><span>Light</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Crunchy</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Add dressing right before serving to keep greens crisp.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 2</strong><p>Light and healthy appetizer.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 6: BERRY CHEESECAKE ============ -->
+<section id="dish-cheesecake" class="detail" style="--hero-color:#C2185B">
+  <div class="splash"><img src="food1.jpg" alt="Cheesecake"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Dessert Special</span><h2>Berry Cheesecake</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="food1.jpg" alt="Cheesecake">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Dessert Special</span>
+        <h2>Berry Cheesecake</h2>
+        <p>Topped with sweet berries</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 35 min</span><span>📊 Medium</span><span>👤 6 servings</span></div>
+    <p class="detail-desc">A rich and creamy baked cheesecake with a buttery graham cracker crust, topped with a luscious sweet berry compote.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Crust</h4><p>Mix crushed cookies with melted butter and press into pan.</p></div></li>
+      <li><span class="num">2</span><div><h4>Filling</h4><p>Beat cream cheese, sugar, eggs, and vanilla until smooth.</p></div></li>
+      <li><span class="num">3</span><div><h4>Bake</h4><p>Pour over crust and bake until set.</p></div></li>
+      <li><span class="num">4</span><div><h4>Cool</h4><p>Chill in the refrigerator for at least 4 hours.</p></div></li>
+      <li><span class="num">5</span><div><h4>Berry compote</h4><p>Simmer mixed berries with sugar until syrupy.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Top cheesecake with berry compote and slice.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🧀</span><strong>Cream cheese</strong><span class="amt">500g</span><span class="note">Softened</span></div>
+      <div class="ing-card"><span class="emoji">🍪</span><strong>Graham crackers</strong><span class="amt">200g</span><span class="note">Crushed</span></div>
+      <div class="ing-card"><span class="emoji">🧈</span><strong>Butter</strong><span class="amt">80g</span><span class="note">Melted</span></div>
+      <div class="ing-card"><span class="emoji">🥚</span><strong>Eggs</strong><span class="amt">3 large</span><span class="note">Binding</span></div>
+      <div class="ing-card"><span class="emoji">🍬</span><strong>Sugar</strong><span class="amt">150g</span><span class="note">Sweetener</span></div>
+      <div class="ing-card"><span class="emoji">🫐</span><strong>Mixed berries</strong><span class="amt">200g</span><span class="note">For topping</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Creamy</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Sweet</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      <div class="flavor-bar"><span>Rich</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Fruity</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Chill thoroughly before slicing for clean edges.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 6</strong><p>A showstopping dessert.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 7: FLUFFY PANCAKES ============ -->
+<section id="dish-pancakes" class="detail" style="--hero-color:#FF8F00">
+  <div class="splash"><img src="piviso-pancakes-2291908_1920.jpg" alt="Pancakes"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Breakfast Favorite</span><h2>Fluffy Pancakes</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="piviso-pancakes-2291908_1920.jpg" alt="Pancakes">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Breakfast Favorite</span>
+        <h2>Fluffy Pancakes</h2>
+        <p>Served with maple syrup & berries</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 20 min</span><span>📊 Easy</span><span>👤 3 servings</span></div>
+    <p class="detail-desc>Thick, golden, and cloud-like pancakes stacked high and drizzled with pure maple syrup and fresh berries.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Dry mix</h4><p>Whisk flour, baking powder, sugar, and salt.</p></div></li>
+      <li><span class="num">2</span><div><h4>Wet mix</h4><p>Mix milk, egg, and melted butter in another bowl.</p></div></li>
+      <li><span class="num">3</span><div><h4>Combine</h4><p>Fold wet ingredients into dry until just combined.</p></div></li>
+      <li><span class="num">4</span><div><h4>Cook</h4><p>Pour batter onto a hot greased griddle.</p></div></li>
+      <li><span class="num">5</span><div><h4>Flip</h4><p>Flip when bubbles form and cook until golden brown.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Top with maple syrup and butter.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Flour</strong><span class="amt">200g</span><span class="note">All-purpose</span></div>
+      <div class="ing-card"><span class="emoji">🥛</span><strong>Milk</strong><span class="amt">250ml</span><span class="note">Whole milk</span></div>
+      <div class="ing-card"><span class="emoji">🥚</span><strong>Egg</strong><span class="amt">1 large</span><span class="note">Binder</span></div>
+      <div class="ing-card"><span class="emoji">🧈</span><strong>Butter</strong><span class="amt">30g</span><span class="note">Melted</span></div>
+      <div class="ing-card"><span class="emoji">🥄</span><strong>Baking powder</strong><span class="amt">2 tsp</span><span class="note">Leavening</span></div>
+      <div class="ing-card"><span class="emoji">🍁</span><strong>Maple syrup</strong><span class="amt">¼ cup</span><span class="note">Topping</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Sweet</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      <div class="flavor-bar"><span>Fluffy</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Rich</span><div class="track"><div class="fill" style="width:70%"></div></div></div>
+      <div class="flavor-bar"><span>Butter</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Do not overmix the batter to keep pancakes extra fluffy.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 3</strong><p>Classic weekend breakfast.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 8: RUSTIC ARTISAN BREAD ============ -->
+<section id="dish-bread" class="detail" style="--hero-color:#795548">
+  <div class="splash"><img src="christinazetterberg-bread-8535650_1920.jpg" alt="Bread"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Bakery Special</span><h2>Rustic Artisan Bread</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="christinazetterberg-bread-8535650_1920.jpg" alt="Bread">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Bakery Special</span>
+        <h2>Rustic Artisan Bread</h2>
+        <p>Freshly baked & golden brown</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 60 min</span><span>📊 Hard</span><span>👤 6 servings</span></div>
+    <p class="detail-desc">Traditional crusty artisan bread with a chewy interior, bubbly crumb, and a beautifully crisp golden crust.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Mix dough</h4><p>Combine flour, warm water, yeast, and salt.</p></div></li>
+      <li><span class="num">2</span><div><h4>Ferment</h4><p>Let rise for 4 hours until bubbly.</p></div></li>
+      <li><span class="num">3</span><div><h4>Shape</h4><p>Shape into a round loaf on a floured surface.</p></div></li>
+      <li><span class="num">4</span><div><h4>Score</h4><p>Score the top with a sharp razor blade.</p></div></li>
+      <li><span class="num">5</span><div><h4>Bake</h4><p>Bake in a preheated Dutch oven for a crispy crust.</p></div></li>
+      <li><span class="num">6</span><div><h4>Cool</h4><p>Let cool completely before slicing.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>4 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Bread flour</strong><span class="amt">500g</span><span class="note">High protein</span></div>
+      <div class="ing-card"><span class="emoji">💧</span><strong>Water</strong><span class="amt">350ml</span><span class="note">Warm water</span></div>
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Yeast</strong><span class="amt">7g</span><span class="note">Active dry</span></div>
+      <div class="ing-card"><span class="emoji">🧂</span><strong>Salt</strong><span class="amt">10g</span><span class="note">Sea salt</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Crusty</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Chewy</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+      <div class="flavor-bar"><span>Simple</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Baking in a covered Dutch oven traps steam for the best crust.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 6</strong><p>Freshly baked homemade bread.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 9: HERB GRILLED CHICKEN ============ -->
+<section id="dish-chicken" class="detail" style="--hero-color:#827717">
+  <div class="splash"><img src="ritae-spaghetti-1392266_1920.jpg" alt="Grilled Chicken"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Lunch Special</span><h2>Herb Grilled Chicken</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="ritae-spaghetti-1392266_1920.jpg" alt="Grilled Chicken">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Lunch Special</span>
+        <h2>Herb Grilled Chicken</h2>
+        <p>Served with roasted veggies</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 40 min</span><span>📊 Medium</span><span>👤 3 servings</span></div>
+    <p class="detail-desc">Juicy chicken breasts marinated in fresh herbs, garlic, and olive oil, grilled to smoky perfection.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Marinate</h4><p>Mix olive oil, rosemary, garlic, and lemon juice.</p></div></li>
+      <li><span class="num">2</span><div><h4>Coat</h4><p>Coat chicken breasts and let marinate.</p></div></li>
+      <li><span class="num">3</span><div><h4>Preheat</h4><p>Heat grill pan over medium-high heat.</p></div></li>
+      <li><span class="num">4</span><div><h4>Cook</h4><p>Grill chicken for 6-8 minutes per side.</p></div></li>
+      <li><span class="num">5</span><div><h4>Rest</h4><p>Let meat rest for 5 minutes before slicing.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Serve with roasted vegetables.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🍗</span><strong>Chicken breasts</strong><span class="amt">3 pieces</span><span class="note">Boneless</span></div>
+      <div class="ing-card"><span class="emoji">🌿</span><strong>Rosemary</strong><span class="amt">2 tbsp</span><span class="note">Chopped fresh</span></div>
+      <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic</strong><span class="amt">3 cloves</span><span class="note">Minced</span></div>
+      <div class="ing-card"><span class="emoji">🫒</span><strong>Olive oil</strong><span class="amt">¼ cup</span><span class="note">Marinade</span></div>
+      <div class="ing-card"><span class="emoji">🍋</span><strong>Lemon juice</strong><span class="amt">2 tbsp</span><span class="note">Fresh</span></div>
+      <div class="ing-card"><span class="emoji">🧂</span><strong>Salt & Pepper</strong><span class="amt">To taste</span><span class="note">Seasoning</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Herby</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      <div class="flavor-bar"><span>Juicy</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+      <div class="flavor-bar"><span>Smoky</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Letting the chicken rest keeps all the delicious juices inside.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 3</strong><p>Healthy protein meal.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 10: GREEN QUINOA BOWL ============ -->
+<section id="dish-quinoa" class="detail" style="--hero-color:#558B2F">
+  <div class="splash"><img src="food.jpg" alt="Quinoa Bowl"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Superfood Bowl</span><h2>Green Quinoa Bowl</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="food.jpg" alt="Quinoa Bowl">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Superfood Bowl</span>
+        <h2>Green Quinoa Bowl</h2>
+        <p>Packed with superfoods</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 15 min</span><span>📊 Easy</span><span>👤 2 servings</span></div>
+    <p class="detail-desc">A wholesome, nutrient-dense bowl filled with fluffy quinoa, fresh avocado, spinach, cucumber, and a light lemon-herb dressing.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Cook quinoa</h4><p>Simmer quinoa in vegetable broth until fluffy.</p></div></li>
+      <li><span class="num">2</span><div><h4>Prep greens</h4><p>Wash baby spinach and slice cucumbers and avocado.</p></div></li>
+      <li><span class="num">3</span><div><h4>Dressing</h4><p>Whisk olive oil, lemon juice, and salt.</p></div></li>
+      <li><span class="num">4</span><div><h4>Assemble</h4><p>Layer quinoa and greens in bowls.</p></div></li>
+      <li><span class="num">5</span><div><h4>Top</h4><p>Add avocado slices and pumpkin seeds.</p></div></li>
+      <li><span class="num">6</span><div><h4>Serve</h4><p>Drizzle with lemon dressing.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Quinoa</strong><span class="amt">1 cup</span><span class="note">Cooked</span></div>
+      <div class="ing-card"><span class="emoji">🥑</span><strong>Avocado</strong><span class="amt">1 medium</span><span class="note">Sliced</span></div>
+      <div class="ing-card"><span class="emoji">🥬</span><strong>Spinach</strong><span class="amt">2 cups</span><span class="note">Fresh baby spinach</span></div>
+      <div class="ing-card"><span class="emoji">🥒</span><strong>Cucumber</strong><span class="amt">1 medium</span><span class="note">Diced</span></div>
+      <div class="ing-card"><span class="emoji">🌱</span><strong>Pumpkin seeds</strong><span class="amt">2 tbsp</span><span class="note">Crunchy top</span></div>
+      <div class="ing-card"><span class="emoji">🍋</span><strong>Lemon dressing</strong><span class="amt">3 tbsp</span><span class="note">Light vinaigrette</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Fresh</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Nutty</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+      <div class="flavor-bar"><span>Light</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Healthy</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Rinse quinoa before cooking to remove any bitter natural coating.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 2</strong><p>Nutrient-rich healthy bowl.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 11: FUDGY CHOCOLATE BROWNIE ============ -->
+<section id="dish-brownie" class="detail" style="--hero-color:#4E342E">
+  <div class="splash"><img src="food4.jpg" alt="Brownie"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Sweet Indulgence</span><h2>Fudgy Chocolate Brownie</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="food4.jpg" alt="Brownie">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Sweet Indulgence</span>
+        <h2>Fudgy Chocolate Brownie</h2>
+        <p>Melt-in-your-mouth goodness</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 30 min</span><span>📊 Easy</span><span>👤 6 servings</span></div>
+    <p class="detail-desc">Decadent, rich, and intensely fudgy chocolate brownies packed with real dark chocolate and cocoa.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Melt</h4><p>Melt dark chocolate and butter together in a bowl.</p></div></li>
+      <li><span class="num">2</span><div><h4>Whisk</h4><p>Whisk in eggs and sugar until pale and glossy.</p></div></li>
+      <li><span class="num">3</span><div><h4>Combine</h4><p>Fold in flour and cocoa powder gently.</p></div></li>
+      <li><span class="num">4</span><div><h4>Pour</h4><p>Transfer batter into a lined baking pan.</p></div></li>
+      <li><span class="num">5</span><div><h4>Bake</h4><p>Bake at 180°C for 25 minutes.</p></div></li>
+      <li><span class="num">6</span><div><h4>Slice</h4><p>Cool completely before cutting into squares.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🍫</span><strong>Dark chocolate</strong><span class="amt">200g</span><span class="note">High quality</span></div>
+      <div class="ing-card"><span class="emoji">🧈</span><strong>Butter</strong><span class="amt">150g</span><span class="note">Unsalted</span></div>
+      <div class="ing-card"><span class="emoji">🥚</span><strong>Eggs</strong><span class="amt">3 large</span><span class="note">Room temp</span></div>
+      <div class="ing-card"><span class="emoji">🍬</span><strong>Sugar</strong><span class="amt">200g</span><span class="note">Granulated</span></div>
+      <div class="ing-card"><span class="emoji">🌾</span><strong>Flour</strong><span class="amt">100g</span><span class="note">All-purpose</span></div>
+      <div class="ing-card"><span class="emoji">🍫</span><strong>Cocoa powder</strong><span class="amt">40g</span><span class="note">Unsweetened</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Chocolaty</span><div class="track"><div class="fill" style="width:98%"></div></div></div>
+      <div class="flavor-bar"><span>Fudgy</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+      <div class="flavor-bar"><span>Sweet</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Rich</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Do not overbake if you want that ultra-fudgy center.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 6</strong><p>Decadent chocolate treat.</p></div>
+  </div>
+</section>
+
+<!-- ============ DISH 12: AVOCADO TOAST ============ -->
+<section id="dish-avocado-toast" class="detail" style="--hero-color:#33691E">
+  <div class="splash"><img src="food2.jpg" alt="Avocado Toast"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Breakfast Classic</span><h2>Poached Egg Avocado Toast</h2></div><div class="splash-bar"><span></span></div></div>
+  <div class="detail-left">
+    <a href="#home" class="back-btn">←</a>
+    <div class="detail-hero">
+      <img src="food2.jpg" alt="Avocado Toast">
+      <div class="detail-hero-text">
+        <span class="detail-tag">Breakfast Classic</span>
+        <h2>Poached Egg Avocado Toast</h2>
+        <p>Fresh herbs & olive oil</p>
+      </div>
+    </div>
+    <div class="meta-row"><span>⏱ 15 min</span><span>📊 Easy</span><span>👤 1 serving</span></div>
+    <p class="detail-desc">Crispy artisan toast topped with creamy mashed avocado, flaky sea salt, red pepper flakes, and a perfectly runny poached egg.</p>
+    <div class="ing-heading"><h3>How to Prepare</h3></div>
+    <ol class="steps">
+      <li><span class="num">1</span><div><h4>Toast bread</h4><p>Toast a thick slice of artisan bread until golden and crisp.</p></div></li>
+      <li><span class="num">2</span><div><h4>Mash avocado</h4><p>Mash ripe avocado with lemon juice, salt, and pepper.</p></div></li>
+      <li><span class="num">3</span><div><h4>Poach egg</h4><p>Gently poach an egg in simmering water for 3 minutes.</p></div></li>
+      <li><span class="num">4</span><div><h4>Spread</h4><p>Spread mashed avocado generously over the toast.</p></div></li>
+      <li><span class="num">5</span><div><h4>Top</h4><p>Place the poached egg carefully on top of the avocado.</p></div></li>
+      <li><span class="num">6</span><div><h4>Garnish</h4><p>Sprinkle with chili flakes and olive oil.</p></div></li>
+    </ol>
+  </div>
+  <div class="detail-right">
+    <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+    <div class="ing-cards">
+      <div class="ing-card"><span class="emoji">🍞</span><strong>Artisan bread</strong><span class="amt">1 slice</span><span class="note">Thick cut</span></div>
+      <div class="ing-card"><span class="emoji">🥑</span><strong>Avocado</strong><span class="amt">1 ripe</span><span class="note">Hass avocado</span></div>
+      <div class="ing-card"><span class="emoji">🥚</span><strong>Egg</strong><span class="amt">1 large</span><span class="note">For poaching</span></div>
+      <div class="ing-card"><span class="emoji">🍋</span><strong>Lemon juice</strong><span class="amt">1 tsp</span><span class="note">Fresh zest</span></div>
+      <div class="ing-card"><span class="emoji">🌶️</span><strong>Chili flakes</strong><span class="amt">½ tsp</span><span class="note">Optional spice</span></div>
+      <div class="ing-card"><span class="emoji">🫒</span><strong>Olive oil</strong><span class="amt">1 tsp</span><span class="note">Drizzle</span></div>
+    </div>
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Creamy</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      <div class="flavor-bar"><span>Fresh</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+      <div class="flavor-bar"><span>Rich</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+    </div>
+    <div class="tip-card"><h4>💡 Chef's Tip</h4><p>Add a splash of white vinegar to the poaching water to help egg whites set faster.</p></div>
+    <div class="serve-card"><span class="emoji">👤</span><strong>Serves 1</strong><p>Healthy and delicious breakfast.</p></div>
+  </div>
+</section>
+
+      
+<!-- About Us Section as 3 Cards -->
+<section class="about-section">
+    <div class="about-container">
+        <div class="section-title" id="about">
+            <span class="about-badge">About Yumbite</span>
+            <h2>Why People Love Cooking With Us</h2>
+        </div>
+
+        <div class="about-cards-grid">
+            <!-- Card 1 -->
+            <div class="about-card">
+                <div class="about-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>Made with Passion</h3>
+                <p>We believe cooking is an art of expressing love, sharing family traditions, and creating warm memories around the table.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="about-card">
+                <div class="about-icon"><i class="fa-solid fa-globe"></i></div>
+                <h3>Global Flavors</h3>
+                <p>Discover authentic tastes and gourmet inspirations from around the world, brought straight to your kitchen easily.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="about-card">
+                <div class="about-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Simple & Easy</h3>
+                <p>Whether you are a beginner or a pro, our recipes guide you step-by-step for a delicious outcome every single time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <footer class="site-footer"> 
+    <span class="footer-logo">Yum<span>Bites</span></span> 
+    <span class="footer-note">Copyright © 2026 Xtra Theme. All Rights Reserved.</span> 
+    </footer> 
+<script src="script.js"></script>
+</body>
+</html>

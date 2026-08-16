@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YumBites — Taste Egypt's Most Beloved Dishes</title>
+<link rel="stylesheet" href="egypt.css">
+</head>
+<body id="top">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="recipe-header">
+        <div class="header-container">
+            <nav class="nav-links right-nav">
+                <a href="index.html#home">Home</a>
+                <a href="dishes.html">Your Dishes</a>
+            </nav>
+
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="Yumbite Logo">
+                <h1>Yum<span>bite</span></h1>
+            </div>
+
+            <nav class="nav-links left-nav">
+                <div class="dropdown">
+                <a href="#" class="dropdown-btn">Categories ▾</a>
+                <div class="dropdown-menu">
+                    <a href="korea.html">Korea </a>
+                     <a href="Italy.html">Italy </a>
+                     <a href="mexico.html">Mexico </a>
+                </div>
+              </div>
+                <a href="index.html#about">About Us</a>
+            </nav>
+
+            <div class="header-buttons">
+                <a href="dishes.html" class="btn add-btn">
+                    <i class="fa-solid fa-plus"></i> Add Recipe
+                </a>
+            </div>
+        </div>
+    </header>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-strip"></div>
+    <div class="hero-inner">
+      <div class="hero-left">
+        <span class="hero-badge">✦ Est. 3000 BCE · Cairo, Egypt ✦</span>
+        <h1 class="hero-headline">
+          <span class="line line-white">Taste Egypt's</span>
+          <span class="line line-gold">Most Beloved</span>
+          <span class="cycle-wrap">
+            <span class="cycle-word" style="animation-delay:0s">Koshari</span>
+            <span class="cycle-word" style="animation-delay:-2.8s">Molokhia</span>
+            <span class="cycle-word" style="animation-delay:-5.6s">Falafel</span>
+            <span class="cycle-word" style="animation-delay:-8.4s">Hwaawshi</span>
+            <span class="cycle-word" style="animation-delay:-11.2s">Mahshi</span>
+            <span class="cycle-word" style="animation-delay:-14s">Fattah</span>
+          </span>
+        </h1>
+        <p class="hero-desc">Six recipes carried down through generations of Egyptian kitchens — from bustling Cairo street carts to Sunday family tables. Every dish, every measure, every step, exactly as it's been made for centuries.</p>
+        <div class="hero-cta">
+          <a href="#dishes" class="btn-primary">Explore Recipes →</a>
+        </div>
+         <div class="hero-pills">
+          <a href="#dish-koshari" class="pill" style="animation-delay:.55s">Koshari</a>
+          <a href="#dish-molokhia" class="pill" style="animation-delay:.62s">Molokhia</a>
+          <a href="#dish-taameya" class="pill" style="animation-delay:.69s">Falafel</a>
+          <a href="#dish-hwaawshi" class="pill" style="animation-delay:.76s">Hwaawshi</a>
+          <a href="#dish-kofta" class="pill" style="animation-delay:.83s">Mahshi</a>
+          <a href="#dish-fattah" class="pill" style="animation-delay:.91s">Fattah</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="polaroid polaroid-1">
+          <img src="images/koshari.jpeg" alt="Koshari">
+          <div class="polaroid-label"><strong>Koshari</strong><span>Street Food</span></div>
+        </div>
+        <div class="polaroid polaroid-2">
+          <img src="images/fattah.jpeg" alt="Fattah">
+          <div class="polaroid-label"><strong>Fattah</strong><span>Grilled</span></div>
+        </div>
+        <div class="polaroid polaroid-3">
+          <img src="images/falafel.jpeg" alt="Falafel">
+          <div class="polaroid-label"><strong>Falafel</strong><span>Fried</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat" style="animation-delay:.7s"><strong>6+</strong><span>Authentic Dishes</span></div>
+      <div class="stat" style="animation-delay:.8s"><strong>5,000</strong><span>Years of Flavor</span></div>
+      <div class="stat" style="animation-delay:.9s"><strong>100%</strong><span>Traditional Recipes</span></div>
+      <div class="stat" style="animation-delay:1s"><strong>3000 BCE</strong><span>Origins in Egypt</span></div>
+      <div class="scroll-indicator"><span>Scroll</span><i></i></div>
+    </div>
+  </header>
+
+  <div class="decor-band"></div>
+
+  <!-- ============ DISH GRID ============ -->
+  <section class="dish-grid-section" id="dishes">
+    <div class="section-heading">
+      <h2>Popular Egyptian Dishes</h2>
+      <p>Click any dish to explore its full recipe and ingredient details.</p>
+    </div>
+
+    <div class="dish-grid">
+
+      <a href="#dish-koshari" class="card card-hover" style="animation-delay:.00s;--hero-color:#8B2500">
+        <div class="card-img"><span class="tag">Street Food</span><img src="images/koshari.jpeg" alt="Koshari"></div>
+        <div class="card-body">
+          <h3>Koshari</h3>
+          <p class="sub">Egypt's national dish</p>
+          <p class="desc">Layers of rice, lentils and macaroni, topped with crisp onions and a tangy garlic-vinegar tomato sauce.</p>
+          <div class="meta"><span>⏱ 45 min</span><span>👤 4 servings</span></div>
+        </div>
+      </a>
+
+      <a href="#dish-molokhia" class="card card-hover" style="animation-delay:.07s;--hero-color:#2F5233">
+        <div class="card-img"><span class="tag">Sunday Staple</span><img src="images/molokhia.jpeg" alt="Molokhia"></div>
+        <div class="card-body">
+          <h3>Molokhia</h3>
+          <p class="sub">Jute-leaf green stew</p>
+          <p class="desc">Finely chopped molokhia leaves simmered in garlicky coriander broth, ladled over rice.</p>
+          <div class="meta"><span>⏱ 1 hr 10 min</span><span>👤 6 servings</span></div>
+        </div>
+      </a>
+
+      <a href="#dish-falafel" class="card card-hover" style="animation-delay:.14s;--hero-color:#7A8C3A">
+        <div class="card-img"><span class="tag">Street Food</span><img src="images/falafel.jpeg" alt="Falafel"></div>
+        <div class="card-body">
+          <h3>Falafel</h3>
+          <p class="sub">Egyptian fava bean falafel</p>
+          <p class="desc">Dried fava beans blitzed with fresh herbs, coated in sesame seeds and fried until golden.</p>
+          <div class="meta"><span>⏱ 40 min</span><span>👤 4 servings</span></div>
+        </div>
+      </a>
+
+      <a href="#dish-fattah" class="card card-hover" style="animation-delay:.21s;--hero-color:#6B4226">
+        <div class="card-img"><span class="tag">Festive</span><img src="images/fattah.jpeg" alt="Fattah"></div>
+        <div class="card-body">
+          <h3>Fattah</h3>
+          <p class="sub">Layered rice & bread</p>
+          <p class="desc">Toasted bread and rice soaked in garlic-vinegar tomato sauce, crowned with tender beef.</p>
+          <div class="meta"><span>⏱ 1 hr</span><span>👤 6 servings</span></div>
+        </div>
+      </a>
+
+      <a href="#dish-hawawshi" class="card card-hover" style="animation-delay:.28s;--hero-color:#A94428">
+        <div class="card-img"><span class="tag">Street Food</span><img src="images/hawawshi.jpeg" alt="Hawawshi"></div>
+        <div class="card-body">
+          <h3>Hawawshi</h3>
+          <p class="sub">Spiced grilled skewers</p>
+          <p class="desc">Ground beef and lamb hand-mixed with parsley, onion and warm spices, grilled over charcoal.</p>
+          <div class="meta"><span>⏱ 35 min</span><span>👤 4 servings</span></div>
+        </div>
+      </a>
+
+      <a href="#dish-mahshi" class="card card-hover" style="animation-delay:.35s;--hero-color:#C9861A">
+        <div class="card-img"><span class="tag">Main-Dish</span><img src="images/mahshi.jpeg" alt="Mahshi"></div>
+        <div class="card-body">
+          <h3>Mahshi</h3>
+          <p class="sub">Stuffed grape leaves</p>
+          <p class="desc">Yummy stuffed grape leaves with a mix of rice, herbs and spices.</p>
+          <div class="meta"><span>⏱ 50 min</span><span>👤 6 servings</span></div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+  <!-- ============ DISH DETAIL: KOSHARI ============ -->
+  <section id="dish-koshari" class="detail" style="--hero-color:#8B2500">
+    <div class="splash"><img src="images/koshari.jpeg" alt="Koshari"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Street Food</span><h2>Koshari</h2></div><div class="splash-bar"><span></span></div></div>
+    <div class="detail-left">
+      <a href="#home" class="back-btn">←</a>
+      <div class="detail-hero">
+        <img src="images/koshari.jpeg" alt="Koshari">
+        <div class="detail-hero-text">
+          <span class="detail-tag">Street Food</span>
+          <h2>Koshari</h2>
+          <p>Egypt's national dish</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span>⏱ 45 min</span><span>📊 Easy</span><span>👤 4 servings</span>
+      </div>
+      <p class="detail-desc">Koshari is the dish every Egyptian grows up on — a hearty, entirely vegetarian bowl of rice, lentils and macaroni, finished with crisp fried onions, chickpeas and a bright garlic-vinegar tomato sauce. It's sold from carts on nearly every Cairo street corner and made just as often at home.</p>
+      <div class="ing-heading"><h3>How to Prepare</h3></div>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h4>Cook the rice</h4><p>Steam the rice until tender and fluffy, then set aside covered.</p></div></li>
+        <li><span class="num">2</span><div><h4>Cook the lentils</h4><p>Simmer lentils in salted water until soft, about 20 minutes.</p></div></li>
+        <li><span class="num">3</span><div><h4>Boil the macaroni</h4><p>Cook until just al dente, then drain.</p></div></li>
+        <li><span class="num">4</span><div><h4>Fry the onions</h4><p>Fry sliced onions in oil until deep golden and crisp; drain on paper towels.</p></div></li>
+        <li><span class="num">5</span><div><h4>Make the sauce</h4><p>Simmer tomato sauce with garlic vinegar and a pinch of chili until thickened.</p></div></li>
+        <li><span class="num">6</span><div><h4>Layer & serve</h4><p>Layer rice, lentils, macaroni and chickpeas in a bowl, top with sauce and crispy onions.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="detail-right">
+      <div class="right-header"><h3>Ingredient Details</h3><p>7 ingredients</p></div>
+      <div class="ing-cards">
+        <div class="ing-card"><span class="emoji">🍚</span><strong>Rice</strong><span class="amt">1 cup</span><span class="note">Long-grain, rinsed</span></div>
+        <div class="ing-card"><span class="emoji"></span><strong>Brown lentils</strong><span class="amt">1 cup</span><span class="note">Pre-soaked 10 min</span></div>
+        <div class="ing-card"><span class="emoji">🍝</span><strong>Macaroni</strong><span class="amt">1 cup</span><span class="note">Small elbow shape</span></div>
+        <div class="ing-card"><span class="emoji">🧅</span><strong>Onions</strong><span class="amt">3 large</span><span class="note">Thin half-moons</span></div>
+        <div class="ing-card"><span class="emoji"></span><strong>Chickpeas</strong><span class="amt">1 can</span><span class="note">Drained & warmed</span></div>
+        <div class="ing-card"><span class="emoji">🍅</span><strong>Tomato sauce</strong><span class="amt">2 cups</span><span class="note">Simple passata</span></div>
+      </div>
+
+      <div class="flavor-card">
+        <h4>Flavor Profile</h4>
+        <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+        <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:40%"></div></div></div>
+        <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:55%"></div></div></div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Chef's Tip</h4>
+        <p>Don't skip the garlic vinegar — it's the tang that ties every layer together. Make extra sauce; koshari always wants more.</p>
+      </div>
+
+      <div class="serve-card">
+        <span class="emoji">👤</span><strong>Serves 4</strong>
+        <p>Scale the rice and lentils 1:1 to feed a crowd.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISH DETAIL: MOLOKHIA ============ -->
+  <section id="dish-molokhia" class="detail" style="--hero-color:#2F5233">
+    <div class="splash"><img src="images/molokhia.jpeg" alt="Molokhia"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Sunday Staple</span><h2>Molokhia</h2></div><div class="splash-bar"><span></span></div></div>
+    <div class="detail-left">
+      <a href="#home" class="back-btn">←</a>
+      <div class="detail-hero">
+        <img src="images/molokhia.jpeg" alt="Molokhia">
+        <div class="detail-hero-text">
+          <span class="detail-tag">Sunday Staple</span>
+          <h2>Molokhia</h2>
+          <p>Jute-leaf green stew</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span>⏱ 1 hr 10 min</span><span>📊 Medium</span><span>👤 6 servings</span>
+      </div>
+      <p class="detail-desc">Molokhia is a deep-green, garlicky stew made from finely chopped jute leaves simmered in rich broth. Ladled hot over rice, it's the dish most Egyptians name first when asked about home cooking.</p>
+      <div class="ing-heading"><h3>How to Prepare</h3></div>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h4>Prepare the broth</h4><p>Bring chicken broth to a gentle simmer in a wide pot.</p></div></li>
+        <li><span class="num">2</span><div><h4>Chop the leaves</h4><p>Finely chop or mince the molokhia leaves until almost fine as herbs.</p></div></li>
+        <li><span class="num">3</span><div><h4>Make the taqliya</h4><p>Sizzle crushed garlic and coriander in hot ghee until fragrant, about 30 seconds.</p></div></li>
+        <li><span class="num">4</span><div><h4>Combine</h4><p>Stir the taqliya and chopped leaves into the simmering broth.</p></div></li>
+        <li><span class="num">5</span><div><h4>Simmer</h4><p>Cook gently for 10–15 minutes, stirring often — don't let it boil hard.</p></div></li>
+        <li><span class="num">6</span><div><h4>Serve</h4><p>Ladle hot over steamed rice.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="detail-right">
+      <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+      <div class="ing-cards">
+        <div class="ing-card"><span class="emoji">🌿</span><strong>Molokhia</strong><span class="amt">500g</span><span class="note">Fresh or frozen</span></div>
+        <div class="ing-card"><span class="emoji">🍗</span><strong>Broth</strong><span class="amt">4 cups</span><span class="note">Chicken or rabbit</span></div>
+        <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic</strong><span class="amt">6 cloves</span><span class="note">Crushed, not minced</span></div>
+        <div class="ing-card"><span class="emoji">🌱</span><strong>Coriander</strong><span class="amt">2 tbsp</span><span class="note">Freshly ground</span></div>
+        <div class="ing-card"><span class="emoji">🧈</span><strong>Ghee</strong><span class="amt">2 tbsp</span><span class="note">Or clarified butter</span></div>
+        <div class="ing-card"><span class="emoji">🍚</span><strong>Rice</strong><span class="amt">2 cups</span><span class="note">Served alongside</span></div>
+      </div>
+
+      <div class="flavor-card">
+        <h4>Flavor Profile</h4>
+        <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:80%"></div></div></div>
+        <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:30%"></div></div></div>
+        <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+        <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Chef's Tip</h4>
+        <p>The garlic-coriander taqliya is sizzled separately and stirred in last — it's what gives molokhia its signature aroma.</p>
+      </div>
+
+      <div class="serve-card">
+        <span class="emoji">👤</span><strong>Serves 6</strong>
+        <p>Pairs traditionally with plain rice and a squeeze of lemon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISH DETAIL: Falafel ============ -->
+  <section id="dish-falafel" class="detail" style="--hero-color:#7A8C3A">
+    <div class="splash"><img src="images/falafel.jpeg" alt="Falafel"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Street Food</span><h2>Falafel</h2></div><div class="splash-bar"><span></span></div></div>
+    <div class="detail-left">
+      <a href="#home" class="back-btn">←</a>
+      <div class="detail-hero">
+        <img src="images/falafel.jpeg" alt="Falafel">
+        <div class="detail-hero-text">
+          <span class="detail-tag">Street Food</span>
+          <h2>Falafel</h2>
+          <p>Egyptian fava bean falafel</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span>⏱ 40 min</span><span>📊 Medium</span><span>👤 4 servings</span>
+      </div>
+      <p class="detail-desc">Unlike the chickpea falafel found elsewhere, Egyptian ta'ameya is made from dried fava beans blended with a generous handful of fresh herbs, then rolled in sesame seeds before frying — giving it a shatteringly crisp shell and a vivid green center.</p>
+      <div class="ing-heading"><h3>How to Prepare</h3></div>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h4>Soak the beans</h4><p>Soak split fava beans overnight in plenty of water.</p></div></li>
+        <li><span class="num">2</span><div><h4>Grind with herbs</h4><p>Drain and process the beans with herbs, onion and garlic to a coarse paste.</p></div></li>
+        <li><span class="num">3</span><div><h4>Season</h4><p>Mix in ground coriander, cumin, salt and a little baking powder; rest 20 minutes.</p></div></li>
+        <li><span class="num">4</span><div><h4>Shape</h4><p>Form into small flat patties.</p></div></li>
+        <li><span class="num">5</span><div><h4>Coat in sesame</h4><p>Press each patty into sesame seeds on both sides.</p></div></li>
+        <li><span class="num">6</span><div><h4>Fry</h4><p>Deep fry in hot oil until deep golden and crisp, about 3 minutes per side.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="detail-right">
+      <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+      <div class="ing-cards">
+        <div class="ing-card"><span class="emoji">🫘</span><strong>Fava beans</strong><span class="amt">2 cups</span><span class="note">Dried, split, soaked</span></div>
+        <div class="ing-card"><span class="emoji">🌿</span><strong>Herbs</strong><span class="amt">2 cups</span><span class="note">Parsley & cilantro</span></div>
+        <div class="ing-card"><span class="emoji">🌱</span><strong>Dill</strong><span class="amt">½ cup</span><span class="note">Fresh only</span></div>
+        <div class="ing-card"><span class="emoji">🧅</span><strong>Onion</strong><span class="amt">1 medium</span><span class="note">Roughly chopped</span></div>
+        <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic</strong><span class="amt">4 cloves</span><span class="note">Peeled</span></div>
+        <div class="ing-card"><span class="emoji">🌰</span><strong>Sesame seeds</strong><span class="amt">½ cup</span><span class="note">For coating</span></div>
+      </div>
+
+      <div class="flavor-card">
+        <h4>Flavor Profile</h4>
+        <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:70%"></div></div></div>
+        <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:45%"></div></div></div>
+        <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:95%"></div></div></div>
+        <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:35%"></div></div></div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Chef's Tip</h4>
+        <p>Never use canned or cooked beans — raw soaked fava is what gives ta'ameya its light, fluffy interior.</p>
+      </div>
+
+      <div class="serve-card">
+        <span class="emoji">👤</span><strong>Serves 4</strong>
+        <p>Makes about 20 patties — great tucked into warm bread.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DISH DETAIL: FATTAH ============ -->
+  <section id="dish-fattah" class="detail" style="--hero-color:#6B4226">
+    <div class="splash"><img src="images/fattah.jpeg" alt="Fattah"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Festive</span><h2>Fattah</h2></div><div class="splash-bar"><span></span></div></div>
+    <div class="detail-left">
+      <a href="#home" class="back-btn">←</a>
+      <div class="detail-hero">
+        <img src="images/fattah.jpeg" alt="Fattah">
+        <div class="detail-hero-text">
+          <span class="detail-tag">Festive</span>
+          <h2>Fattah</h2>
+          <p>Layered rice & bread</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span>⏱ 1 hr</span><span>📊 Medium</span><span>👤 6 servings</span>
+      </div>
+      <p class="detail-desc">Fattah is a celebration dish — crisp toasted bread and fragrant rice soaked in a bright garlic-vinegar tomato sauce, layered and topped with tender slow-cooked beef. It's the centerpiece of feasts and family gatherings.</p>
+      <div class="ing-heading"><h3>How to Prepare</h3></div>
+      <ol class="steps">
+        <li><span class="num">1</span><div><h4>Toast the bread</h4><p>Tear bread into pieces and toast or fry until deeply crisp.</p></div></li>
+        <li><span class="num">2</span><div><h4>Cook the rice</h4><p>Steam rice with a touch of ghee until fluffy.</p></div></li>
+        <li><span class="num">3</span><div><h4>Boil the meat</h4><p>Simmer beef cubes with onion and bay leaf until fork-tender, about 1.5 hours.</p></div></li>
+        <li><span class="num">4</span><div><h4>Make the sauce</h4><p>Combine tomato sauce with garlic vinegar and a splash of the beef broth; simmer.</p></div></li>
+        <li><span class="num">5</span><div><h4>Layer</h4><p>Layer toasted bread, then rice, then soak generously with sauce.</p></div></li>
+        <li><span class="num">6</span><div><h4>Top & serve</h4><p>Crown with the beef and a final drizzle of sauce.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="detail-right">
+      <div class="right-header"><h3>Ingredient Details</h3><p>6 ingredients</p></div>
+      <div class="ing-cards">
+        <div class="ing-card"><span class="emoji">🍞</span><strong>Flatbread</strong><span class="amt">4 loaves</span><span class="note">Toasted to shards</span></div>
+        <div class="ing-card"><span class="emoji">🍚</span><strong>Rice</strong><span class="amt">2 cups</span><span class="note">Long-grain</span></div>
+        <div class="ing-card"><span class="emoji">🥩</span><strong>Beef</strong><span class="amt">1 kg</span><span class="note">Chuck, cubed</span></div>
+        <div class="ing-card"><span class="emoji">🍅</span><strong>Tomato sauce</strong><span class="amt">2 cups</span><span class="note">Simmered thick</span></div>
+        <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic vinegar</strong><span class="amt">4 tbsp</span><span class="note">Sharp & bright</span></div>
+        <div class="ing-card"><span class="emoji">🧈</span><strong>Ghee</strong><span class="amt">3 tbsp</span><span class="note">For frying bread</span></div>
+      </div>
+
+      <div class="flavor-card">
+        <h4>Flavor Profile</h4>
+        <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+        <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:35%"></div></div></div>
+        <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+        <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:85%"></div></div></div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Chef's Tip</h4>
+        <p>Soak the bread just before serving — any earlier and it turns soggy instead of staying pleasantly crisp underneath.</p>
+      </div>
+
+      <div class="serve-card">
+        <span class="emoji">👤</span><strong>Serves 6</strong>
+        <p>Traditionally served at celebrations and Eid gatherings.</p>
+      </div>
+    </div>
+  </section>
+
+<!-- ============ DISH DETAIL: HAWAWSHI ============ -->
+<section id="dish-hawawshi" class="detail" style="--hero-color:#A94428">
+
+  <div class="splash">
+    <img src="images/hawawshi.jpeg" alt="Hawawshi">
+    <div class="splash-overlay"></div>
+
+    <div class="splash-text">
+      <span class="splash-tag">Street Food</span>
+      <h2>Hawawshi</h2>
+    </div>
+
+    <div class="splash-bar">
+      <span></span>
+    </div>
+  </div>
+
+  <div class="detail-left">
+
+    <a href="#home" class="back-btn">←</a>
+
+    <div class="detail-hero">
+      <img src="images/hawawshi.jpeg" alt="Hawawshi">
+
+      <div class="detail-hero-text">
+        <span class="detail-tag">Street Food</span>
+        <h2>Hawawshi</h2>
+        <p>Egyptian spiced meat stuffed in bread</p>
+      </div>
+    </div>
+
+    <div class="meta-row">
+      <span>⏱ 35 min</span>
+      <span>📊 Easy</span>
+      <span>👤 4 servings</span>
+    </div>
+
+    <p class="detail-desc">
+      Hawawshi is a beloved Egyptian street food made by stuffing
+      pita or baladi bread with seasoned minced beef, onion, peppers
+      and aromatic spices. The stuffed bread is baked or grilled until
+      the bread becomes crisp and golden while the meat remains juicy
+      and flavorful.
+    </p>
+    <div class="ing-heading">
+      <h3>How to Prepare</h3>
+    </div>
+
+    <ol class="steps">
+
+      <li>
+        <span class="num">1</span>
+        <div>
+          <h4>Prepare the filling</h4>
+          <p>
+            Mix the ground beef with chopped onion, green pepper,
+            parsley, garlic, cumin, coriander, salt and black pepper.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="num">2</span>
+        <div>
+          <h4>Prepare the bread</h4>
+          <p>
+            Carefully open each loaf of baladi bread to create a pocket
+            without tearing the bread.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="num">3</span>
+        <div>
+          <h4>Stuff the bread</h4>
+          <p>
+            Spread an even layer of the meat mixture inside each loaf.
+            Do not overfill the bread.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="num">4</span>
+        <div>
+          <h4>Brush with oil</h4>
+          <p>
+            Lightly brush both sides of the stuffed bread with oil.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="num">5</span>
+        <div>
+          <h4>Bake</h4>
+          <p>
+            Bake in a preheated oven at 200°C until the bread is crisp
+            and golden and the meat is fully cooked, about 15–20 minutes.
+          </p>
+        </div>
+      </li>
+
+      <li>
+        <span class="num">6</span>
+        <div>
+          <h4>Serve</h4>
+          <p>
+            Cut the Hawawshi into pieces and serve hot with salad,
+            pickles or tahini.
+          </p>
+        </div>
+      </li>
+
+    </ol>
+
+  </div>
+
+  <div class="detail-right">
+
+    <div class="right-header">
+      <h3>Ingredient Details</h3>
+      <p>8 ingredients</p>
+    </div>
+
+    <div class="ing-cards">
+
+      <div class="ing-card">
+        <span class="emoji">🥩</span>
+        <strong>Ground beef</strong>
+        <span class="amt">500g</span>
+        <span class="note">Fresh minced beef</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🧅</span>
+        <strong>Onion</strong>
+        <span class="amt">1 large</span>
+        <span class="note">Finely chopped</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🌶️</span>
+        <strong>Green pepper</strong>
+        <span class="amt">1 medium</span>
+        <span class="note">Finely chopped</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🌿</span>
+        <strong>Parsley</strong>
+        <span class="amt">½ cup</span>
+        <span class="note">Fresh & chopped</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🧄</span>
+        <strong>Garlic</strong>
+        <span class="amt">3 cloves</span>
+        <span class="note">Minced</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🌶️</span>
+        <strong>Cumin</strong>
+        <span class="amt">1 tsp</span>
+        <span class="note">Ground</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🌿</span>
+        <strong>Coriander</strong>
+        <span class="amt">1 tsp</span>
+        <span class="note">Ground</span>
+      </div>
+
+      <div class="ing-card">
+        <span class="emoji">🫓</span>
+        <strong>Baladi bread</strong>
+        <span class="amt">4 loaves</span>
+        <span class="note">Fresh Egyptian bread</span></div>
+    </div>
+
+    <div class="flavor-card">
+      <h4>Flavor Profile</h4>
+      <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:90%"></div></div></div>
+      <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:60%"></div></div></div>
+      <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:75%"></div></div></div>
+      <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:80%"></div></div>
+      </div>
+
+    </div>
+
+    <div class="tip-card">
+      <h4>💡 Chef's Tip</h4>
+      <p>
+        Spread the meat mixture evenly and keep it relatively thin.
+        This helps the meat cook completely before the bread becomes
+        too dark.
+      </p>
+    </div>
+
+    <div class="serve-card">
+      <span class="emoji">👤</span>
+      <strong>Serves 4</strong>
+      <p>Serve hot with pickles, salad, tahini or your favorite dipping sauce.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+  <!-- ============ DISH DETAIL: MAHSHI ============ -->
+  <section id="dish-mahshi" class="detail" style="--hero-color:#C9861A">
+    <div class="splash"><img src="images/mahshi.jpeg" alt="Mahshi"><div class="splash-overlay"></div><div class="splash-text"><span class="splash-tag">Main-Dish</span><h2>Mahshi</h2></div><div class="splash-bar"><span></span></div></div>
+    <div class="detail-left">
+      <a href="#home" class="back-btn">←</a>
+      <div class="detail-hero">
+        <img src="images/mahshi.jpeg" alt="Mahshi">
+        <div class="detail-hero-text">
+          <span class="detail-tag">Main-Dish</span>
+          <h2>Mahshi</h2>
+          <p>Stuffed zucchini & eggplant</p>
+        </div>
+      </div>
+      <div class="meta-row">
+        <span>⏱  1 hr 15 min</span><span>📊 Easy</span><span>👤 6 servings</span>
+      </div>
+      <p class="detail-desc">Egyptian Mahshi is a beloved homemade dish made with hollowed zucchini
+      and eggplant stuffed with a flavorful rice mixture of tomatoes, onions,
+      herbs and warm spices. The vegetables are slowly cooked in a rich tomato
+      broth until tender, juicy and full of traditional Egyptian flavor..</p>
+      <div class="ing-heading"><h3>How to Prepare</h3></div>
+      <ol class="steps">
+       <li><span class="num">1</span><div><h4>Prepare the vegetables</h4><p> Wash the zucchini and eggplant. Carefully hollow them out using a vegetable corer, leaving enough flesh around the edges so they don't break.</p></div></li>
+      <li><span class="num">2</span><div><h4>Make the rice filling</h4><p>Mix rinsed rice with grated tomatoes, chopped onion, parsley,cilantro, dill, garlic, oil, cumin, salt and pepper</p></div></li>
+      <li><span class="num">3</span><div><h4>Stuff the zucchini & eggplant</h4><p>Fill each vegetable with the rice mixture, leaving about onequarter of the vegetable empty because the rice will expandwhile cooking.</p></div></li>
+      <li><span class="num">4</span><div><h4>Arrange the pot</h4><p>Arrange the stuffed zucchini and eggplant tightly in a largecooking pot, standing them upright or laying them closely together.</p></div></li>
+      <li><span class="num">5</span><div><h4>Add the tomato broth</h4><p>Mix tomato sauce with water, salt, pepper and a little cumin.Pour the liquid into the pot until it reaches about halfway upthe vegetables.</p></div></li>
+      <li><span class="num">6</span><div><h4>Cook slowly</h4><p>Bring to a gentle boil, then reduce the heat, cover and simmerfor about 45–55 minutes until the vegetables are tender and therice is completely cooked.</p></div></li>
+       <li><span class="num">7</span> <div><h4>Serve</h4><p>Carefully remove the mahshi from the pot and serve hot withextra tomato sauce or a side of Egyptian salad.</p></div></li>
+       </ol>
+    </div>
+
+
+    <div class="detail-right">
+      <div class="right-header"><h3>Ingredient Details</h3><p>12 ingredients</p></div>
+      <div class="ing-cards">
+        <div class="ing-card"><span class="emoji">🥒</span><strong>Zucchini</strong><span class="amt">8 medium</span><span class="note">Hollowed carefully</span></div>
+        <div class="ing-card"><span class="emoji">🍆</span><strong>Small eggplant</strong><span class="amt">6 medium</span><span class="note">Small Egyptian eggplant</span></div>
+        <div class="ing-card"><span class="emoji">🍚</span><strong>Short-grain rice</strong><span class="amt">2 cup</span><span class="note">Short-grain, rinsed</span></div>
+        <div class="ing-card"><span class="emoji">🍅</span><strong>Tomatoes</strong><span class="amt">4 large</span><span class="note">Freshly grated</span></div>
+        <div class="ing-card"><span class="emoji">🧅</span><strong>Onion</strong><span class="amt">2 medium</span><span class="note">Finely chopped</span></div>
+        <div class="ing-card"><span class="emoji">🌿</span><strong> Fresh parsley</strong><span class="amt">2 cups</span><span class="note">Parsley, dill & cilantro</span></div>
+        <div class="ing-card"><span class="emoji">🧄</span><strong>Garlic</strong><span class="amt">4 cloves</span><span class="note">Freshly minced</span></div>
+        <div class="ing-card"><span class="emoji">🍅</span><strong>Tomato sauce</strong><span class="amt">2 cup</span><span class="note">For cooking broth</span></div>
+      </div>
+
+      <div class="flavor-card">
+        <h4>Flavor Profile</h4>
+        <div class="flavor-bar"><span>Savory</span><div class="track"><div class="fill" style="width:15%"></div></div></div>
+        <div class="flavor-bar"><span>Spice</span><div class="track"><div class="fill" style="width:10%"></div></div></div>
+        <div class="flavor-bar"><span>Aromatic</span><div class="track"><div class="fill" style="width:55%"></div></div></div>
+        <div class="flavor-bar"><span>Richness</span><div class="track"><div class="fill" style="width:92%"></div></div></div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Chef's Tip</h4>
+        <p>Use day-old croissants instead of puff pastry for an even richer, more buttery version of this dessert.</p>
+      </div>
+
+      <div class="serve-card">
+        <span class="emoji">👤</span><strong>Serves 6</strong>
+        <p>Best served warm, straight from the baking dish.</p>
+      </div>
+    </div>
+  </section>
+    <footer class="site-footer">
+    <span class="footer-logo">Yum<span>Bites</span></span>
+    <span class="footer-note">Celebrating the flavors of Egypt ✦</span>
+  </footer>
+
+</body>
+</html>
